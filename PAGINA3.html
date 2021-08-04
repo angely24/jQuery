@@ -1,0 +1,287 @@
+<!doctype html>
+<!-- Analísis y Desarrollo de Sistemas de Informción
+Ficha: 2252471
+Aprendiz: Angely Rojas Rodriguez
+Objetivo: Realizar ejercicios con jQuery -->
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--llamamos nuestros estilos css-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>PAGINA</title>
+</head>
+
+<body>
+    <main class="container vh-100 vw-100">
+        <div class="row">
+            <!--ENCABEZADO-->
+            <header class="col-12 text-center fs-1 border">
+                <img src="Imagenes/SENA.png" class="rounded float-start" alt="...">
+                <h2 class=" mb-0 p-2 fs-6">ANALISIS Y DESARROLLO DE SISTEMAS DE INFORMACIÓN, FICHA:2252472,
+                    CENTRO DE BIOTECNOLOGIA AGROPECUARIA, MOSQUERA-CUNDINAMARCA</h2>
+            </header>
+            <!--MENÚ PRINCIPAL-->
+            <nav class="navbar navbar-expand-lg navbar-light navbar-expandnavbar-primary border col-12 p-3">
+                <div class="container">
+                    <a class="navbar-brand " href="#">
+                        <span class="fs-5 text-primary fw-bold">jQuery</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#primero">primero</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#segundo">segundo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tercero">tercero</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#cuarto">cuarto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#quinto">quinto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sexto">sexto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#septimo">septimo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#octavo">octavo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#noveno">noveno</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#decimo">decimo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#onceavo">onceavo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--MENÚ ALTERNO-->
+            <nav class=" navbar-lg  navbar-expandnavbar-primary  navbar-light p-3 border col-sm-4 col-md-2 d-none d-md-block ">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <span class="fs-5 text-primary fw-bold">jQuery</span>
+                    </a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar" id="navbarSupportedContent1">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#primero">primero</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#equipo">segundo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#seccion-contacto">tercero</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#cuarto">cuarto</a>
+                            </li>  
+                            <li class="nav-item">
+                                <a class="nav-link" href="#quinto">quinto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sexto">sexto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#septimo">septimo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#octavo">octavo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#noveno">noveno</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#decimo">decimo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#onceavo">onceavo</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--CUERPO-->
+            <section class="col-xs-12 col-md-10 border">
+                <!--PRIMER EJERCICIO-->
+                <div class="w-auto p-3 text-center border" id="primero">
+                    <h2> PRIMER EJERCICIO</h2>
+                    <div id="pandora"> Esta es la caja de Pandora </div>
+                    <input type="button" id="Button" value="Ejecutar">
+                    <div class="mh-100" style="width: 100px; height: 80px"></div>
+                    <div class="h-auto d-inline-block" style="width: 120px"></div>
+                </div>
+                <!--SEGUNDO EJERCICIO-->
+                <div class="w-auto p-3 text-center border" id="segundo">
+                    <h2> SEGUNDO EJERCICIO</h2>
+                    <ol id="horcruxes">
+                        <li>currently empty</li>
+                    </ol>
+                    <input type="button" id="Button2" value="Ejecutar">
+                    <div class="mh-100" style="width: 100px; height: 80px"></div>
+                    <div class="h-auto d-inline-block" style="width: 120px"></div>
+                </div>
+                <!--TERCER EJERCICIO-->
+                <div class="w-auto p-3 text-center border" id="tercero">
+                    <h2> TERCER EJERCICIO</h2>
+                    <figure id="fig1">
+                        <img id="img1" src="Imagenes/HARRY.jpeg" alt="Harry Potter">
+                        <figcaption id="cap1">Harry Potter as played by Daniel Radcliffe</figcaption>
+                    </figure>
+                    <input type="button" id="Button3" value="Ejecutar">
+                    <div class="mh-100" style="width: 100px; height: 80px"></div>
+                    <div class="h-auto d-inline-block" style="width: 120px"></div>
+                </div>
+                <!--CUARTO  EJERCICIO-->
+                <div class="w-auto p-3 text-center border"  id="cuarto">
+                    <h2> CUARTO EJERCICIO</h2>
+                    <figure id="fig2">
+                        <img src="Imagenes/hermione.jpeg" alt="Hermione Granger">
+                        <figcaption>Hermione Granger as played by Emma Watson</figcaption>
+                    </figure>
+                    <input type="button" id="Button4" value="Ejecutar">
+                    <div class="mh-100" style="width: 100px; height: 80px"></div>
+                    <div class="h-auto d-inline-block" style="width: 120px"></div>
+                </div>
+                <!-- QUINTO  EJERCICIO-->
+                <div class="w-auto p-3 text-center border" id="quinto">
+                    <h2> QUINTO EJERCICIO</h2>
+                    <figure id="fig3">
+                        <img src="Imagenes/hermione.jpeg" alt="Hermione Granger">
+                        <figcaption>Hermione Granger as played by Emma Watson</figcaption>
+                    </figure>
+                    <input type="button" id="Button5" value="Esconder">
+                    <input type="button" id="Button6" value="Enseñar">
+                    <div class="mh-100" style="width: 100px; height: 80px"></div>
+                    <div class="h-auto d-inline-block" style="width: 120px"></div>
+                </div>
+                <!-- SEXTO  EJERCICIO-->
+                <div class="w-auto p-3 text-center border" id="sexto">
+                    <h2> SEXTO EJERCICIO</h2>
+                    <ol id="characters1">
+                        <li class="gryffindor">Harry</li>
+                        <li class="gryffindor">Ron</li>
+                        <li class="gryffindor">Hermione</li>
+                        <li class="gryffindor">Fred</li>
+                        <li class="gryffindor">George</li>
+                        <li class="ravenclaw">Cho</li>
+                        <li class="hufflepuff">Cedric</li>
+                        <li class="slytherin">Draco</li>
+                        <li class="slytherin">Crabbe</li>
+                        <li class="slytherin">Goyle</li>
+                    </ol>
+                    <input type="button" id="Button7" value="Ejecutar">
+                    <div class="mh-100" style="width: 100px; height: 80px"></div>
+                    <div class="h-auto d-inline-block" style="width: 120px"></div>
+                </div>
+                <!-- SEPTIMO EJERCICIO-->
+                <div class="w-auto p-3 text-center border" id="septimo">
+                    <h2> SEPTIMO EJERCICIO</h2>
+                    <figure id="fig4">
+                        <img id="img4" src="Imagenes/HARRY.jpeg" alt="Harry Potter">
+                        <figcaption id="cap2">Harry Potter as played by Daniel Radcliffe</figcaption>
+                    </figure>
+                    <input type="button" id="Button8" value="Ejecutar">
+                    <div class="mh-100" style="width: 100px; height: 80px"></div>
+                    <div class="h-auto d-inline-block" style="width: 120px"></div>
+                </div>
+                <!-- OCTAVO EJERCICIO-->
+                <div class="w-auto p-3 text-center border" id="octavo">
+                    <h2> OCTAVO EJERCICIO</h2>
+                    <ol id="characters2">
+                        <li class="gryffindor">Harry</li>
+                        <li class="gryffindor">Ron</li>
+                        <li class="gryffindor">Hermione</li>
+                        <li class="gryffindor">Fred</li>
+                        <li class="gryffindor">George</li>
+                        <li class="ravenclaw">Cho</li>
+                        <li class="hufflepuff">Cedric</li>
+                        <li class="slytherin">Draco</li>
+                        <li class="slytherin">Crabbe</li>
+                        <li class="slytherin">Goyle</li>
+                    </ol>
+                    <input type="button" id="Button9" value="Ejecutar">
+                    <div class="mh-100" style="width: 100px; height: 80px"></div>
+                    <div class="h-auto d-inline-block" style="width: 120px"></div>
+                </div>
+                <!-- NOVENO EJERCICIO-->
+                <div class="w-auto p-3 text-center border" id="noveno">
+                    <h2> NOVENO EJERCICIO</h2>
+                    <h1>News for Today</h1> <!-- replaced by today's date -->
+                    <input type="button" id="Button10" value="Ejecutar">
+                    <div class="mh-100" style="width: 100px; height: 80px"></div>
+                    <div class="h-auto d-inline-block" style="width: 120px"></div>
+                </div>
+                <!-- DECIMO EJERCICIO-->
+                <div class="w-auto p-3 text-center border" id="decimo">
+                    <h2> DECIMO EJERCICIO</h2>
+                    <h3>News for Today</h3> <!-- replaced by today's date -->
+                    <input type="button" id="Button11" value="Ejecutar">
+                    <div class="mh-100" style="width: 100px; height: 80px"></div>
+                    <div class="h-auto d-inline-block" style="width: 120px"></div>
+                </div>
+                <!-- ONCEAVO EJERCICIO-->
+                <div class="w-auto p-3 text-center border" id="onceavo">
+                    <h2> ONCEAVO EJERCICIO</h2>
+                    <figure id="fig2a">
+                        <img src="Imagenes/hermione.jpeg" alt="Hermione Granger">
+                        <figcaption>Hermione Granger as played by Emma Watson</figcaption>
+                    </figure>
+                    <input type="button" id="Button12" value="Ejecutar">
+                    <div class="mh-100" style="width: 100px; height: 80px"></div>
+                    <div class="h-auto d-inline-block" style="width: 120px"></div>
+                </div>
+            </section>
+<!-- PIE DE PAGINA-->
+            <footer class="col-12 text-center fs-1 border">
+                <p>
+                    <img src="Imagenes/w3c.png" class="rounded float-start" alt="certificado W3C">
+                </p>
+                <p class="h6"> COPYRIGHT © Certificado W3C Angely Rojas Rodriguez.</p>
+            </footer>
+
+        </div>
+
+    </main>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <!--INCLUIR JQUERY EN NUESTROS PROGRAMAS-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"> </script>
+    <script src="js/ejemplo1.js"></script>
+</body>
+
+</html>
